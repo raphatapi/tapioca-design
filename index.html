@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+</head>
+<body>
+    <main class="wrapper">
+        <section class="section parallax bg1">
+            <!-- <div id="typed-strings">
+                <p>Typed.js is a <strong>JavaScript</strong> library.</p>
+                <p>It <em>types</em> out sentences.</p>
+            </div> -->
+            <h1>Raphael Tapioca: <span id="typed"></span></h1>
+        </section>
+        <section class="section static">
+            <h1>Boring</h1>
+        </section>
+        <section class="section parallax bg2">
+            <h1>SO FWUFFY AWWW</hi>
+        </section>
+    </main>
+    <script>
+            var typed = new Typed('#typed', {
+                strings: ["Web Designer", "Backend and Frontend", "Web Developer"],
+                typeSpeed: 100,
+                backSpeed: 30,
+                smartBackspace: true,
+                backDelay: 2000,
+                loop: true,
+                loopCount: Infinity
+            });
+    </script>
+</body>
+</html>
