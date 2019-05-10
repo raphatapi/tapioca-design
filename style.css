@@ -1,5 +1,8 @@
 /* Tiny reset thingy */
-body,html{margin:0;padding:0;}
+body,html{
+  margin:0;
+  padding:0;
+}
 
 h1 {
     font-size: xx-large;
@@ -60,8 +63,16 @@ h1 {
 
 /* Sets the actual background images to adorable kitties. This part is crucial. */
 .bg1::after {
-  background-image: url('./raph_4-2.jpg');
-}
+  background-image:
+        /* top, transparent black, faked with gradient */ 
+        linear-gradient(
+          rgba(0, 0, 0, 0.5), 
+          rgba(0, 0, 0, 0.5)
+        ),
+        /* bottom, image */
+        url('./raph_4-2.jpg');
+    }
+  /* background-image: url('./raph_4-2.jpg'); */
 
 .bg2::after {
   background-image: url('./Raphael_1\ \(2\).jpg');
