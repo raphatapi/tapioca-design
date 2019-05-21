@@ -8,9 +8,9 @@ $(document).ready(function() {
         $(".wrapper").on("scroll", function () {
             // set distance user needs to scroll before we fadeIn navbar
             if ($(this).scrollTop() > 200) {
-                $('.navbar').fadeIn();
+                $('.navbar').slideDown("fast");
             } else {
-                $('.navbar').fadeOut();
+                $('.navbar').slideUp("slow");
             }
         });    
     });
