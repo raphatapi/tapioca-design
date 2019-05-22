@@ -6,10 +6,10 @@ $(document).ready(function() {
         backSpeed: 30,
         smartBackspace: true,
         backDelay: 800,
+        showCursor: false,
         loop: true,
         loopCount: Infinity
     });
-
 
 
 });
