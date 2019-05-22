@@ -11,5 +11,10 @@ $(document).ready(function() {
         loopCount: Infinity
     });
 
+    $(".ct-btn-scroll").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#sticky").offset().top
+        }, 2000);
+    });
 
 });
