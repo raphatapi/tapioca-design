@@ -12,9 +12,19 @@ $(document).ready(function() {
     });
 
     $(".ct-btn-scroll").click(function() {
-        $('html, body').animate({
-            scrollTop: $("#sticky").offset().top
-        }, 2000);
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+            // Store hash
+            var hashTop = this.hash;
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (1200) specifies the number of milliseconds it takes to scroll to the specified area
+            $('.wrapper').animate({
+                scrollTop: $(hashTop).offset().top - $("nav").outerHeight(true)
+              }, 1200, function(){
+            });
+          } // End if
     });
 
 });
