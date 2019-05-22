@@ -1,12 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text|Staatliches&display=swap');
+
 /* Tiny reset thingy */
 body,html{
   margin: 0;
   padding:0;
   scroll-behavior: smooth;
-}
-
-h1 {
-  font-size: xx-large;
 }
 
 .wrapper {
@@ -22,31 +20,11 @@ h1 {
   transform-style: preserve-3d;
 }
 
-.navbar {
-  /* visibility: visible;
-  opacity: 1; */
-  background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
-  -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-}
-
-/* .bg-custom-2 {
-  background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
-} */
-
-.section {
+section {
   /* Needed for children to be absolutely positioned relative to the parent. */
   position: relative;
   /* The height of the container. Must be set, but it doesn't really matter what the value is. */
   height: 100vh;
-  
-  /* For text formatting. */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: left;
   color: white;
   text-shadow: 0 0 5px #000;
 }
@@ -72,15 +50,46 @@ h1 {
   z-index: -1;
 }
 
+.cover {
+  padding: 3%;
+}
+
+.bg1::after {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./raph_4-2.jpg');
+}
+
+.cover h1 {
+  font-family: 'Staatliches', cursive;
+  letter-spacing: .8em;
+  font-size: 80px;
+}
+
+.cover span {
+  font-size: 50px;
+  line-height: 6rem;
+  margin-left: 1%;
+  font-family: 'Libre Barcode 39 Text', cursive;
+}
+
+#sticky-phantom {
+  display: none;
+}
+
+.navbar {
+  background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
 /* The styling for the static div. */
 .static {
   background: red;
 }
 
 /* Sets the actual background images to adorable kitties. This part is crucial. */
-.bg1::after {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./raph_4-2.jpg');
-}
+
 
 .bg2::after {
   background-image: url('./Raphael_1\ \(2\).jpg');
