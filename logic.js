@@ -24,7 +24,33 @@ $(document).ready(function() {
                 scrollTop: $(hashTop).offset().top - $("nav").outerHeight(true)
               }, 1200, function(){
             });
-          } // End if
+        } // End if
+    });
+
+    $('.wrapper').scroll(function () {
+        //Method 1: Using addClass and removeClass
+        if ($(this).scrollTop() > $(".cover").outerHeight(true)+1) {
+            $('.navbar').addClass('navbar-shrink');
+            $('.rounded-circle').css({
+                'width' : '60px',
+                'height' : '60px',
+                'transition' : '0.5s'
+            });
+            $('.navbar-brand span').css({
+                'font-size': '3rem',
+                'trasition': '0.5s'
+            });
+        } else {
+            $('.navbar').removeClass('navbar-shrink');
+            $('.rounded-circle').css({
+                'width' : '100px',
+                'height' : '100px'
+            });
+            $('.navbar-brand span').css({
+                'font-size': '4rem',
+                'transition': '0.5s'
+            });
+        }
     });
 
 });
