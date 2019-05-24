@@ -55,6 +55,16 @@ $(document).ready(function() {
         }
     });
 
+    // Also can pass in optional settings block
+    var rellax = new Rellax('.rellax', {
+        speed: -7,
+        center: false,
+        wrapper: null,
+        round: true,
+        vertical: true,
+        horizontal: false
+      });
+
     AOS.init({
         duration: 1200,
       })
