@@ -31,6 +31,7 @@ $(document).ready(function() {
         //Method 1: Using addClass and removeClass
         if ($(this).scrollTop() > $(".cover").outerHeight(true)+1) {
             $('.navbar').addClass('navbar-shrink');
+            $('.nav-item a i').addClass('fa-2x').removeClass('fa-3x').css('transition', '0.5s');
             $('.rounded-circle').css({
                 'width' : '60px',
                 'height' : '60px',
@@ -42,6 +43,7 @@ $(document).ready(function() {
             });
         } else {
             $('.navbar').removeClass('navbar-shrink');
+            $('.nav-item a i').addClass('fa-3x').removeClass('fa-2x').css('transition', '0.5s');
             $('.rounded-circle').css({
                 'width' : '100px',
                 'height' : '100px'
@@ -52,5 +54,9 @@ $(document).ready(function() {
             });
         }
     });
+
+    AOS.init({
+        duration: 1200,
+      })
 
 });

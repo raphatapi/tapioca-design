@@ -1,10 +1,23 @@
-/* @import url('https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text|Staatliches&display=swap'); */
+* {
+  box-sizing: border-box;
+}
+
+.item {
+  width: 200px;
+  height: 200px;
+  margin: 50px auto;
+  padding-top: 75px;
+  background: #ccc;
+  text-align: center;
+  color: #FFF;
+  font-size: 3em;
+}
+
 
 /* Tiny reset thingy */
 body,html{
   margin: 0;
   padding:0;
-  /* scroll-behavior: smooth; */
 }
 
 .wrapper {
@@ -24,7 +37,7 @@ section {
   /* Needed for children to be absolutely positioned relative to the parent. */
   position: relative;
   /* The height of the container. Must be set, but it doesn't really matter what the value is. */
-  height: 100vh;
+  min-height: 100vh;
   color: white;
   text-shadow: 0 0 5px #000;
 }
@@ -93,17 +106,18 @@ section {
 }
 
 .navbar {
-  padding: 30px 15px;
+  padding: 15px;
   transition: padding 0.5s;
-  background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
-  -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
+  background-image: none;
 }
 
 .navbar-shrink {
-  padding: 10px 5px;
+  padding: 5px;
+  background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+  -webkit-transition: all 0.7s ease-in-out;
+  -moz-transition: all 0.7s ease-in-out;
+  -o-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
 }
 
 .navbar-brand span {
@@ -126,10 +140,9 @@ section {
 
 /* The styling for the static div. */
 .static {
-  background-image: url('./12.jpg');
+  background: url('./wallpaper-with-white-background-19.png') no-repeat center center;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+  
 }
 
 /* Sets the actual background images to adorable kitties. This part is crucial. */
