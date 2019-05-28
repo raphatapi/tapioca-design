@@ -20,48 +20,19 @@ body,html{
   padding:0;
 }
 
-.wrapper {
-  /* The height needs to be set to a fixed value for the effect to work.
-   * 100vh is the full height of the viewport. */
-  height: 100vh;
-  /* The scaling of the images would add a horizontal scrollbar, so disable x overflow. */
-  overflow-x: hidden;
-  /* Enable scrolling on the page. */
-  overflow-y: scroll;
-  /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*/
-  perspective: 2px;
-  transform-style: preserve-3d;
-}
-
 section {
-  /* Needed for children to be absolutely positioned relative to the parent. */
-  position: relative;
-  /* The height of the container. Must be set, but it doesn't really matter what the value is. */
   min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: -1;
   color: white;
   text-shadow: 0 0 5px #000;
 }
 
-.parallax::after {
-  content: " ";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  transform: translateZ(-1px) scale(1.6);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center; 
-  z-index: -1;
-}
-
 .cover {
-  padding: 3%;
-}
-
-.bg1::after {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./raph_4-2.jpg');
+  padding: 2%;
 }
 
 .cover h1 {
@@ -105,7 +76,7 @@ section {
 }
 
 .navbar-shrink {
-  padding: 3px;
+  padding: 5px;
   background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
   -webkit-transition: all 0.7s ease-in-out;
   -moz-transition: all 0.7s ease-in-out;
@@ -114,11 +85,11 @@ section {
 }
 
 .navbar-brand span {
-  font-size:4rem;
+  font-size: 3rem;
   font-family: 'Libre Barcode 39 Text', cursive;
-	display:inline-block;
-	vertical-align:middle;
-	padding:0 0 4px 15px;
+	display: inline-block;
+	vertical-align: middle;
+	padding: 0 0 0 15px;
 }
 
 .social i {
@@ -141,6 +112,6 @@ section {
 /* Sets the actual background images to adorable kitties. This part is crucial. */
 
 
-.bg2::after {
+.bg2 {
   background-image: url('./Raphael_1\ \(2\).jpg');
 }

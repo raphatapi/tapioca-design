@@ -20,14 +20,14 @@ $(document).ready(function() {
             var hashTop = this.hash;
             // Using jQuery's animate() method to add smooth page scroll
             // The optional number (1200) specifies the number of milliseconds it takes to scroll to the specified area
-            $('.wrapper').animate({
+            $('html, body').animate({
                 scrollTop: $(hashTop).offset().top - $("nav").outerHeight(true)
               }, 1200, function(){
             });
         } // End if
     });
 
-    $('.wrapper').scroll(function () {
+    $(document).scroll(function () {
         //Method 1: Using addClass and removeClass
         if ($(this).scrollTop() > $(".cover").outerHeight(true)+1) {
             $('.navbar').addClass('navbar-shrink');
@@ -38,32 +38,24 @@ $(document).ready(function() {
                 'transition' : '0.5s'
             });
             $('.navbar-brand span').css({
-                'font-size': '3rem',
+                'font-size': '2rem',
                 'trasition': '0.5s'
             });
         } else {
             $('.navbar').removeClass('navbar-shrink');
             $('.nav-item a i').addClass('fa-2x').removeClass('fa-lg').css('transition', '0.5s');
             $('.rounded-circle').css({
-                'width' : '90px',
-                'height' : '90px'
+                'width' : '80px',
+                'height' : '80px'
             });
             $('.navbar-brand span').css({
-                'font-size': '4rem',
+                'font-size': '3rem',
                 'transition': '0.5s'
             });
         }
     });
 
-    // Also can pass in optional settings block
-    var rellax = new Rellax('.rellax', {
-        speed: -7,
-        center: false,
-        wrapper: null,
-        round: true,
-        vertical: true,
-        horizontal: false
-      });
+    $(".cover").paroller({ factor: 0.5, factorXs: 0.2, factorSm: 0.3});
 
     AOS.init({
         duration: 1200,
