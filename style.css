@@ -99,13 +99,13 @@ section {
 }
 
 .navbar {
-  padding: 15px;
+  padding: 12px;
   transition: padding 0.5s;
   background-image: none;
 }
 
 .navbar-shrink {
-  padding: 5px;
+  padding: 3px;
   background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
   -webkit-transition: all 0.7s ease-in-out;
   -moz-transition: all 0.7s ease-in-out;
@@ -114,11 +114,11 @@ section {
 }
 
 .navbar-brand span {
-  font-size:6rem;
+  font-size:4rem;
   font-family: 'Libre Barcode 39 Text', cursive;
 	display:inline-block;
 	vertical-align:middle;
-	padding:0 0 5px 15px;
+	padding:0 0 4px 15px;
 }
 
 .social i {

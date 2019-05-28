@@ -31,10 +31,10 @@ $(document).ready(function() {
         //Method 1: Using addClass and removeClass
         if ($(this).scrollTop() > $(".cover").outerHeight(true)+1) {
             $('.navbar').addClass('navbar-shrink');
-            $('.nav-item a i').addClass('fa-2x').removeClass('fa-3x').css('transition', '0.5s');
+            $('.nav-item a i').addClass('fa-lg').removeClass('fa-2x').css('transition', '0.5s');
             $('.rounded-circle').css({
-                'width' : '60px',
-                'height' : '60px',
+                'width' : '50px',
+                'height' : '50px',
                 'transition' : '0.5s'
             });
             $('.navbar-brand span').css({
@@ -43,10 +43,10 @@ $(document).ready(function() {
             });
         } else {
             $('.navbar').removeClass('navbar-shrink');
-            $('.nav-item a i').addClass('fa-3x').removeClass('fa-2x').css('transition', '0.5s');
+            $('.nav-item a i').addClass('fa-2x').removeClass('fa-lg').css('transition', '0.5s');
             $('.rounded-circle').css({
-                'width' : '100px',
-                'height' : '100px'
+                'width' : '90px',
+                'height' : '90px'
             });
             $('.navbar-brand span').css({
                 'font-size': '4rem',
