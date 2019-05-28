@@ -1,24 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-
-.item {
-  width: 200px;
-  height: 200px;
-  margin: 50px auto;
-  padding-top: 75px;
-  background: #ccc;
-  text-align: center;
-  color: #FFF;
-  font-size: 3em;
-}
-
-
-/* Tiny reset thingy */
-body,html{
-  margin: 0;
-  padding:0;
-}
 
 section {
   min-height: 100vh;
@@ -94,23 +73,23 @@ section {
 
 .social i {
   color: white;
-  /* height: 100px;
-  width: 100px; */
 }
 
 #sticky-phantom {
   display: none;
 }
 
-/* The styling for the static div. */
 .static {
-  background: url('./wallpaper-with-white-background-19.png') no-repeat center center;
-  background-size: cover;
-  
+  background-image: url('./wallpaper-with-white-background-19.png');
 }
 
-/* Sets the actual background images to adorable kitties. This part is crucial. */
+.card {
+  border: none;
+}
 
+.card-deck {
+  margin: 50px auto;
+}
 
 .bg2 {
   background-image: url('./Raphael_1\ \(2\).jpg');
