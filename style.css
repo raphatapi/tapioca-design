@@ -1,3 +1,6 @@
+body {
+  overflow-x: hidden;
+}
 
 section {
   min-height: 100vh;
@@ -80,15 +83,17 @@ section {
 }
 
 .static {
+  /* height: 100vh; */
   background-image: url('./wallpaper-with-white-background-19.png');
+  padding: 3%;
+}
+
+.card-deck {
+  margin: 2% 0;
 }
 
 .card {
   border: none;
-}
-
-.card-deck {
-  margin: 50px auto;
 }
 
 .bg2 {
