@@ -8,8 +8,6 @@ section {
   background-repeat: no-repeat;
   background-position: center center;
   z-index: -1;
-  color: white;
-  text-shadow: 0 0 5px #000;
 }
 
 .cover {
@@ -19,8 +17,14 @@ section {
 
 h1 {
   font-family: 'Staatliches', cursive;
+  color: white;
+  text-shadow: 0 0 5px #000;
   letter-spacing: .8em;
   font-size: 80px;
+}
+
+#typed {
+  color: white;
 }
 
 .cover span {
@@ -94,6 +98,15 @@ h1 {
 
 .card {
   border: none;
+}
+
+.turquoise {
+  color: turquoise;
+  font-weight: 500;
+}
+
+.card-text {
+  color: #000;
 }
 
 .bg2 {
