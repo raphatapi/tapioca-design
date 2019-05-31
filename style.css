@@ -13,8 +13,9 @@ section {
 h1 {
   font-family: 'Staatliches', cursive;
   color: white;
+  margin-bottom: 20px;
   text-shadow: 0 0 5px #000;
-  letter-spacing: .8em;
+  letter-spacing: .7em;
   font-size: 80px;
 }
 
@@ -24,7 +25,7 @@ h1 {
 }
 
 .title {
-  margin: 2% auto;
+  margin: 15% auto;
 }
 
 #typed {
@@ -108,12 +109,23 @@ h1 {
   border: none;
 }
 
+.lang i {
+  margin: 0 1%;
+}
+
+.lang img {
+  vertical-align: top;
+  height: 2em;
+  color: turquoise;
+}
+
 .turquoise {
   color: turquoise;
   font-weight: 500;
 }
 
 .card-text {
+  margin-top: 30px;
   color: #000;
 }
 
