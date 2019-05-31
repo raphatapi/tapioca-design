@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
     var typed = new Typed('#typed', {
-        strings: ["Web Designer", "Backend and Frontend", "Web Developer"],
+        strings: ["Web Developer", "Backend and Frontend", "Web Developer"],
         typeSpeed: 70,
         backSpeed: 30,
         smartBackspace: true,
@@ -22,7 +22,7 @@ $(document).ready(function() {
             // The optional number (1200) specifies the number of milliseconds it takes to scroll to the specified area
             $('html, body').animate({
                 scrollTop: $(hashTop).offset().top - $("nav").outerHeight(true)
-              }, 1200, function(){
+              }, 1600, function(){
             });
         } // End if
     });
@@ -56,10 +56,11 @@ $(document).ready(function() {
     });
 
     $(".cover").paroller({ factor: 0.5, factorXs: 0.2, factorSm: 0.3});
-    $('.stats').paroller();
+    $('.paroller').paroller();
 
     AOS.init({
         duration: 1200,
-      })
+        easing: 'ease-in-out-back'
+      });
 
 });

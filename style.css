@@ -10,17 +10,21 @@ section {
   z-index: -1;
 }
 
-.cover {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./raph_4-2.jpg');
-  padding: 2%;
-}
-
 h1 {
   font-family: 'Staatliches', cursive;
   color: white;
   text-shadow: 0 0 5px #000;
   letter-spacing: .8em;
   font-size: 80px;
+}
+
+.cover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./raph_4-2.jpg');
+  padding: 2%;
+}
+
+.title {
+  margin: 2% auto;
 }
 
 #typed {
@@ -94,6 +98,10 @@ h1 {
 
 .card-deck {
   margin: 2% 0;
+}
+
+.stats {
+  margin: 90px auto;
 }
 
 .card {
