@@ -94,7 +94,10 @@ h1 {
 .static {
   /* height: 100vh; */
   background: white;
-  /* background-image: url('./wallpaper-with-white-background-19.png'); */
+  background-image: url('./5abb9b4976b97.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: fixed;
   padding: 3%;
 }
 
@@ -132,4 +135,24 @@ h1 {
 
 .bg2 {
   background-image: url('./wood.jpg');
+}
+
+.pics {
+  display: -ms-flexbox; /* IE 10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE 10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  -ms-flex: 50%; /* IE 10 */
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
 }
