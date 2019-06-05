@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
     var typed = new Typed('#typed', {
-        strings: ["Web Developer", "Backend and Frontend", "Web Developer"],
+        strings: ["Web Developer", "Frontend", "HTML5 CSS3 JS", "Backend", "Node Express MySQL MongoDB"],
         typeSpeed: 70,
         backSpeed: 30,
         smartBackspace: true,

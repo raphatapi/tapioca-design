@@ -14,9 +14,9 @@ h1 {
   font-family: 'Staatliches', cursive;
   color: white;
   margin-bottom: 20px;
-  text-shadow: 0 0 5px #000;
-  letter-spacing: .7em;
-  font-size: 80px;
+  text-shadow: 2px 3px 4px rgb(39, 39, 39);
+  letter-spacing: .6em;
+  font-size: 400%;
 }
 
 .cover {
@@ -26,10 +26,12 @@ h1 {
 
 .title {
   margin: 4% auto;
+
 }
 
 #typed {
   color: white;
+  font-size: 350%;
 }
 
 .cover span {
@@ -100,6 +102,11 @@ h1 {
   background-position: fixed;
   background-attachment: fixed;
   padding: 3%;
+}
+
+.static-title h1 {
+  text-align: center;
+  color: mediumvioletred;
 }
 
 .card-deck {
