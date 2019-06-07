@@ -59,7 +59,7 @@ $(document).ready(function() {
     $('.paroller').paroller();
 
     AOS.init({
-        duration: 1200,
+        duration: 1500,
         easing: 'ease-in-out-back'
       });
 

@@ -14,7 +14,7 @@ h1 {
   font-family: 'Staatliches', cursive;
   color: white;
   margin-bottom: 20px;
-  text-shadow: 2px 3px 4px rgb(39, 39, 39);
+  /* text-shadow: 2px 3px 4px rgb(39, 39, 39); */
   letter-spacing: .6em;
   font-size: 450%;
 }
@@ -106,7 +106,9 @@ h1 {
 
 .static-title h1 {
   text-align: center;
-  color: mediumvioletred;
+  background: linear-gradient(330deg, #e05252 0%, #99e052 25%, #52e0e0 50%, #9952e0 75%, #e05252 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 .card-deck {
