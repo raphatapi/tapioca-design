@@ -29,7 +29,7 @@ $(document).ready(function() {
 
     $(document).scroll(function () {
         //Method 1: Using addClass and removeClass
-        if ($(this).scrollTop() > $(".cover").outerHeight(true)+1) {
+        if ($(this).scrollTop() > $(".cover").outerHeight(true)) {
             $('.navbar').addClass('navbar-shrink');
             $('.nav-item a i').addClass('fa-lg').removeClass('fa-2x').css('transition', '0.5s');
             $('.rounded-circle').css({
@@ -41,6 +41,9 @@ $(document).ready(function() {
                 'font-size': '2rem',
                 'trasition': '0.5s'
             });
+            // $('.static').css({
+            //     'padding-top': '12%'
+            // });
         } else {
             $('.navbar').removeClass('navbar-shrink');
             $('.nav-item a i').addClass('fa-2x').removeClass('fa-lg').css('transition', '0.5s');
@@ -52,6 +55,9 @@ $(document).ready(function() {
                 'font-size': '3rem',
                 'transition': '0.5s'
             });
+            // $('.static').css({
+            //     'padding-top': '5%'
+            // });
         }
     });
 

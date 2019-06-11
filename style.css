@@ -64,11 +64,16 @@ h1 {
 
 .navbar {
   padding: 12px;
-  transition: padding 0.5s;
+  transition: padding 0.4s;
   background-image: none;
 }
 
 .navbar-shrink {
+  position: initial;
+  /* z-index: 10000; */
+  top: 0;
+  left: 0;
+  right: 0;
   padding: 5px;
   background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
   -webkit-transition: all 0.7s ease-in-out;
@@ -101,7 +106,7 @@ h1 {
   background-repeat: no-repeat;
   background-position: fixed;
   background-attachment: fixed;
-  padding: 5% 3%;
+  padding: 3%;
 }
 
 .static-title h1 {
