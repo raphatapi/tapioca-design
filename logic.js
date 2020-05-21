@@ -11,7 +11,7 @@ $(document).ready(function() {
         loopCount: Infinity
     });
 
-    $(".ct-btn-scroll").click(function() {
+    $(".ct-btn-scroll").click(function(event) {
         // Make sure this.hash has a value before overriding default behavior
         if (this.hash !== "") {
             // Prevent default anchor click behavior
@@ -21,7 +21,7 @@ $(document).ready(function() {
             // Using jQuery's animate() method to add smooth page scroll
             // The optional number (1200) specifies the number of milliseconds it takes to scroll to the specified area
             $('html, body').animate({
-                scrollTop: $(hashTop).offset().top - $("nav").outerHeight(true)
+                scrollTop: $(hashTop).offset().top - $("nav").outerHeight(true) + 1
               }, 1600, function(){
             });
         } // End if
@@ -41,9 +41,9 @@ $(document).ready(function() {
                 'font-size': '2rem',
                 'trasition': '0.5s'
             });
-            // $('.static').css({
-            //     'padding-top': '12%'
-            // });
+            $('.static h1').css({
+                'margin-top': '10%'
+            });
         } else {
             $('.navbar').removeClass('navbar-shrink');
             $('.nav-item a i').addClass('fa-2x').removeClass('fa-lg').css('transition', '0.5s');
@@ -55,9 +55,9 @@ $(document).ready(function() {
                 'font-size': '3rem',
                 'transition': '0.5s'
             });
-            // $('.static').css({
-            //     'padding-top': '5%'
-            // });
+            $('.static h1').css({
+                'margin-top': '0'
+            });
         }
     });
 

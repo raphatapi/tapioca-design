@@ -71,8 +71,8 @@ h1 {
 }
 
 .navbar-shrink {
-  position: initial;
-  /* z-index: 10000; */
+  position: fixed;
+  z-index: 10000;
   top: 0;
   left: 0;
   right: 0;
@@ -97,7 +97,8 @@ h1 {
 }
 
 #sticky-phantom {
-  display: none;
+  visibility: hidden;
+  /* display: none; */
 }
 
 .static {
